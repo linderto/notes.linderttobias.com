@@ -1,0 +1,9 @@
+{{ define "title" }}
+  {{ .Site.Title }}
+{{ end }}
+
+{{ define "content" }}
+  {{/* Instantiate the paginator for the homepage with only main sections (posts) */}}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.MainSections) }}
+  {{ partial "list.html" . }}
+{{ end }}
