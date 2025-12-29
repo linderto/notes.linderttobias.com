@@ -6,6 +6,4 @@ draft = false
 
 # About Me
 
-I am Tobias Lindert, a DevOps and IT engineer based in Munich.
-
-Welcome to my personal notes and blog.
+Hey there! I'm a DevOps/IT Engineer with a passion for tackling complex challenges through the power of one and zeros. In the rare event of a global network apocalypse, you'll catch me shredding up fresh powder in the Alps, kitesurfing across my local lake, or whipping up a scrumptious eggplant lasagna for my friends to enjoy as we ride out the digital storm.
