@@ -1,11 +1,12 @@
 # notes.linderttobias.com
 
-Welcome to the repository for [notes.linderttobias.com](https://notes.linderttobias.com), a personal blog powered by Jekyll and GitHub Pages. This blog serves as a place where I share my thoughts, ideas, and notes on various topics.
+Welcome to the repository for [notes.linderttobias.com](https://notes.linderttobias.com), a personal blog powered by Hugo and GitHub Pages. This blog serves as a place where I share my thoughts, ideas, and notes on various topics.
 
 ## Features
 
-- **Jekyll-powered**: This site is built using [Jekyll](https://jekyllrb.com/), a static site generator that makes it easy to create and manage blog content.
+- **Hugo-powered**: This site is built using [Hugo](https://gohugo.io/), a fast and flexible static site generator.
 - **GitHub Pages**: Hosted on GitHub Pages for easy deployment and version control.
+- **Theme**: Uses the [Hugo Coder](https://github.com/luizdepra/hugo-coder) theme.
 
 ## Usage
 
@@ -13,24 +14,42 @@ Welcome to the repository for [notes.linderttobias.com](https://notes.linderttob
 
 Adding new blog posts is simple:
 
-
-1. Navigate to the `_posts` directory.  
-2. Create a new file called `YYYY-MM-DD-NAME-OF-POST.md`, replacing YYYY-MM-DD with the date of your post and NAME-OF-POST with the name of your post.
-3. Add the following YAML frontmatter to the top of the file, including the post's title enclosed in quotation marks, the date and time for the post in YYYY-MM-DD hh:mm:ss -0000 format, and as many categories as you want for your post.
+1.  Create a new post using the Hugo CLI:
+    ```bash
+    hugo new posts/my-new-post.md
     ```
-    layout: post
-    title: "POST-TITLE"
-    date: YYYY-MM-DD hh:mm:ss -0000
-    categories: CATEGORY-1 CATEGORY-2
-    ---
+    Alternatively, create a file manually in `content/posts/`.
+
+2.  Update the frontmatter in the created file (e.g., `content/posts/my-new-post.md`). Ensure `draft` is set to `false` when ready to publish.
+    ```toml
+    +++
+    title = 'My New Post'
+    date = 2025-12-29T12:00:00+01:00
+    draft = false
+    +++
     ```
-4. Below the frontmatter, add content for your post.
 
-### Publish new blog posts
+3.  Add your content below the frontmatter using Markdown.
 
+### Run locally
 
+1.  Ensure you have [Hugo installed](https://gohugo.io/installation/).
+2.  Run the server:
+    ```bash
+    hugo server -D
+    ```
+    The `-D` flag includes draft content.
+3.  Visit `http://localhost:1313`.
 
-1. Navigate to the `docs` directory.
-2. `bundle exec jekyll serve`
-3. Visit `localhost:4000`
-4. `If you==happy (add,commit,push) else (rewrit)`
+### Publish
+
+1.  Commit your changes:
+    ```bash
+    git add .
+    git commit -m "Add new post"
+    ```
+2.  Push to GitHub:
+    ```bash
+    git push
+    ```
+    The GitHub Actions workflow will automatically build and deploy the site.
