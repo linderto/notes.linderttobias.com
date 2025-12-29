@@ -1,5 +1,5 @@
 baseurl = "https://notes.linderttobias.com"
-title = "Notes linderttobias"
+title = "Notes - linderttobias"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
