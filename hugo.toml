@@ -49,17 +49,12 @@ style = "github-dark"
   name = "Github"
   icon = "fa-brands fa-github fa-2x"
   weight = 1
-  url = "https://github.com/linderttobias/"
+  url = "https://github.com/linderto/"
 [[params.social]]
-  name = "Gitlab"
-  icon = "fa-brands fa-gitlab fa-2x"
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
   weight = 2
-  url = "https://gitlab.com/linderttobias/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa-brands fa-x-twitter fa-2x"
-  weight = 3
-  url = "https://twitter.com/linderttobias/"
+  url = "https://www.linkedin.com/in/tobias-lindert-7475411aa"
 
 # Menu links
 [[menu.main]]
