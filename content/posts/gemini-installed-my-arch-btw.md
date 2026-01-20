@@ -1,6 +1,6 @@
 +++ 
 draft = false 
-date = 2026-01-19T18:17:13+01:00
+date = 2026-01-20T08:17:13+01:00
 title = "Gemini installed my Arch Linux, btw"
 description = ""
 slug = ""
@@ -13,11 +13,11 @@ series = []
 
 Six minutes and 134,000 Gemini 3.0 tokens;  Thats all it took for Gemini to set up a functional Arch Linux system with LUKS on LVM, Hyprland, and Waybar using a bootable USB ISO.
 
-Recently, I have been toying with different Linux distributions. While I am very happy with my current setup (Ubuntu + Hyprland), there are definitely valid arguments for other distros like Fedora, Debian, or Arch[^1]. While Fedora uses the “Anaconda” GUI installer, Arch Linux is DIY by nature. It forces you to build the system from the ground up, which significantly boosts your understanding of the vast GNU/Linux ecosystem.
+Recently, I have been toying with different Linux distributions. While I am very happy with my current setup (Ubuntu with Hyprland), there are definitely valid arguments for alternative distros like Fedora, Debian, or Arch[^1]. While Fedora uses the “Anaconda” GUI installer, Arch Linux is DIY by nature. It requires you to build the system from scratch, significantly deepening your understanding of the GNU/Linux ecosystem.
 
 Thanks to a detailed documentation in the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide), I was able to get Arch running “relatively” quickly on a spare Schenker laptop with encrypted disks, successfully porting my Hyprland work environment. (Needless to say, mistakes were made; my first reboot resulted in a corrupted boot drive. It took some more tries and troubleshooting to get the system exactly how I wanted it.)
 
-Once the system was tailored to my needs, I did the only “sane” thing I could think of: I inserted the bootable USB again, booted into the live environment, and wiped my disks to start from zero. I then installed gemini-cli in the live environment, entered the “YOLO Mode” (STRG+Y) with Gemini 3.0[^2] and supplied the agent with the following prompt:
+Once the system was tailored to my needs, I did the only “sane” thing I could think of: I inserted the USB drive again, booted into the live environment, and wiped my disks to start from zero. I then installed gemini-cli in the live environment, entered the “YOLO Mode” (STRG+Y) with Gemini 3.0[^2] and supplied the agent with the following prompt:
 
 > “You are an expert Linux System Admin and a passionate Arch Linux user. Performance and Security are your priorities. You are currently on a live ISO of Arch. Install Arch on the system successfully with LUKS, LVM, Hyprland, and Waybar. Additionally, there is an extra USB drive with multiple dotfiles; install and configure them.”
 
