@@ -25,6 +25,12 @@ Once the system was tailored to my needs, I did the only “sane” thing I coul
 
 I could not have asked for more. However, I’ll still do it manually next time[^3]
 
+**Update:**
+
+The feedback on this was quite interesting, ranging from "fuck ai" to "awesome". I think it's neither one of these. My reasons for trying this were actually quite simple:
+- Obviously, curiosity. I could not find anyone who had tried this (at least the person did not write about it), and the idea to try using AI Agents to install an (seemingly) hard-to-install OS came more or less out of curiosity.
+- Second, Learning: I knew by then that LLMs excel at writing code, and I was happy to throw AI at any repetitive task I had to do. One thing I learned from this is that although the AI is doing 80% of the work, we can stil learn and expand our understand just by observing the Agent.
+
 [^1]: I have been running my Ubuntu + Hyprland setup quite successfully for a while, but was increasingly running into limitations when needing up-to-date packages. I also wanted to experiment with cutting-edge features, which often required manually building these packages because they had not yet been published for Ubuntu (or never will be). Additionally, I was always enviously surveying the AUR for package versions that were a couple of major and minor versions ahead of Ubuntu.
 [^2]: I tried the same prompt several times with Gemini 2.5 Pro; it failed each time with the encryption step, and the system could not boot up successfully on its own afterwards.
 [^3]: There are lots and lots of reasons to do this manually. “Just Because You Can, Doesn’t Mean You Should”.
